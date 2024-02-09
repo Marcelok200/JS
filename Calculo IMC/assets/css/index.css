@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(16, 114, 110);
+}
+
+.container{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 20px;
+}
+
+.div_informacao{
+    display: flex;
+    gap: 60px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+form input{
+    height: 40px;
+    font: 20px;
+}
+
+form button{
+    margin: 15px 0 ;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(16, 114, 110);
+    font-weight: 900;
+}
+
+.errMessage{
+    background-color: red;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    margin: 5px 0;
+}
+
+.valorAceitavel{
+    background-color: green;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    margin: 5px 0;
+}

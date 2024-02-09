@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+
+    <section class="container">
+
+        <h1>Formulário de cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisar ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="/" method="post" class="formulario">
+            <label for="userName">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="userName" class="valida">
+            <label for="userSobrenome" >Sobrenome</label>
+            <input type="text" placeholder="Digite seu sobrenome" id="userSobrenome" class="valida">
+            <label for="userCpf">CPF</label>
+            <input type="text" placeholder="Digite seu CPF" id = "userCpf" class="valida userCpf">
+
+            <label for="user">Usuário</label>
+            <input type="text" placeholder="Digite seu nome de usuário" id = "user" class="valida user">
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua senha" id = "password" class="valida senha">
+
+            <label for="repeat-password">Repetir sua senha</label>
+            <input type="password" placeholder="Repita sua senha" id = "repeat-password" class="valida senha-repetida">
+
+            
+            <button type="submit" id="btnEnvio">Enviar formulário</button>
+
+        </form> 
+
+    </section>
+    <script src="assets/javascript/validaCPF.js"></script>
+    <script src="assets/javascript/index.js"></script>
+</body>
+
+</html>
