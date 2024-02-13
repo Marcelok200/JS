@@ -30,7 +30,7 @@ const nomes = [
 // });
 
 const pessoaMaisCinquenta = nomes.filter((valor)=>{
-    return valor.idade >= 29;
+    return valor.nome.length>6;
 });
 
 console.log(pessoaMaisCinquenta)
