@@ -8,26 +8,33 @@ const condPokemon = document.querySelector('.id__pokemon');
 let contador = 1; // Inicializa o contador com 1
 
 btnPrevent.addEventListener('click', () => {
-    if (contador < 1) { 
-        alert('Valor inesperado')
-        contador = 1;
-   
-    } 
+    if (id__Pokemon.value !== "") {
+        const valorPokemon = parseInt(id__Pokemon.value); // Convertendo o valor do campo para um número inteiro
+        if (!isNaN(valorPokemon)) { // Verifica se o valor é um número
+            contador = valorPokemon; // Atualiza o contador com o valor do campo
+        }
+    }
+    id__Pokemon.value = "";
     contador--
     carregarAPI(contador)
 });
 
 btnNext.addEventListener('click', () => {
-    if (id__Pokemon.value !== "") { 
-        contador += id__Pokemon.value
-        id__Pokemon.value = ""   
-      
+    if (id__Pokemon.value !== "") {
+        const valorPokemon = parseInt(id__Pokemon.value); // Convertendo o valor do campo para um número inteiro
+        if (!isNaN(valorPokemon)) { // Verifica se o valor é um número
+            contador = valorPokemon; // Atualiza o contador com o valor do campo
+        }
     }
+    id__Pokemon.value = "";
     contador++
-    carregarAPI(contador)
+    carregarAPI(contador);
 });
 
+
+
 btnCarregarApi.addEventListener('click', () => {
+    contador = 1
 
     carregarAPI(id__Pokemon.value);
 
