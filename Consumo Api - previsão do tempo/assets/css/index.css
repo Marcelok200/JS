@@ -60,3 +60,23 @@ form button{
 form button:hover{
     background-color: var(--primary-color-dark );
 }
+
+.resultadoPrevisao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.resultadosTemperatura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.clima{
+    display: flex;
+    gap: 24px;
+}
